@@ -5,7 +5,8 @@ using UnityEngine;
 public class ArrowController : MonoBehaviour
 {
     GameObject player;
-   
+    
+    
     void Start()
     {
         this.player = GameObject.Find("player");// 대문자 GameObject는 객체가 아니다.
@@ -31,8 +32,17 @@ public class ArrowController : MonoBehaviour
         if(d<r1+r2)
         {
             //충돌한 경우 화살을 삭제 메서드 (Destroy)
+
+            GameObject director = GameObject.Find("GameDirector");
+            director.GetComponent<GameDirector>().SetHpGauge(); // GameDirector 게임오브젝트 찾아서 스크립트의 SetHPGauge 함수를 실행해주는 코드.
+            
             Debug.Log("화살에 맞았다");
             Destroy(gameObject);
+            
+            
+             
         }
+         
+       
     }
 }
