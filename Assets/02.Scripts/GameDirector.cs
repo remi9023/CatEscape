@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement; // 재시작 원할 때
-using UnityEngine.UI; // UI를 사용할 때 꼭 추가해주기! *중요
+using UnityEngine.UI;// UI를 사용할 때 꼭 추가해주기! *중요
+
 
 public class GameDirector : MonoBehaviour
 {
@@ -11,11 +12,14 @@ public class GameDirector : MonoBehaviour
    public GameObject gameOver_panel;
    bool isGameStart = false; 
    bool isGameOver = false; // 초기 게임 오버 상태는 거짓상태로 시작
+    public Text Playtime_Text;
+    float delta = 0f;
     
     void Update()
          
     {
-     
+     this.delta += Time.deltaTime;   
+        Playtime_Text.text=delta.ToString("F2")+"s";
     }
 
     public void SetHpGauge()
@@ -37,7 +41,7 @@ public class GameDirector : MonoBehaviour
     }
     public void RestartGame()
     {
-        SceneManager.LoadScene("game scene"); // 현재 씬 재시작
+        SceneManager.LoadScene("Gamescene"); // 현재 씬 재시작
     }
 
 }
