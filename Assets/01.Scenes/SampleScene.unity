@@ -829,7 +829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   arrowPrefab: {fileID: 1095377446451729826, guid: 14d45aca3c44076478966b4d03be87a7, type: 3}
-  spawn: 0.2
+  spawn: 0.1
 --- !u!4 &998955210
 Transform:
   m_ObjectHideFlags: 0
@@ -1194,6 +1194,10 @@ PrefabInstance:
     - target: {fileID: 2515151549139798841, guid: 14d45aca3c44076478966b4d03be87a7, type: 3}
       propertyPath: m_Color.r
       value: 0.5471698
+      objectReference: {fileID: 0}
+    - target: {fileID: 2515151549139798841, guid: 14d45aca3c44076478966b4d03be87a7, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6587959072408502425, guid: 14d45aca3c44076478966b4d03be87a7, type: 3}
       propertyPath: m_LocalPosition.x
