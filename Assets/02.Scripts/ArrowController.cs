@@ -15,7 +15,7 @@ public class ArrowController : MonoBehaviour
    
     void Update()
     {
-        transform.Translate(0, -0.1f, 0); // 리지드바디를 쓰지 않고 화살이 자연스럽게 떨어지는 것.
+        transform.Translate(0, -0.05f, 0); // 리지드바디를 쓰지 않고 화살이 자연스럽게 떨어지는 것.
         if (transform.position.y < -6.0f)
         {
             Destroy(gameObject); // 소문자 gameObject는 해당 컴포넌트에 할당된  자기자신
