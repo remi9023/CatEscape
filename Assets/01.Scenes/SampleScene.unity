@@ -1183,6 +1183,8 @@ MonoBehaviour:
   hpGauge: {fileID: 759341560}
   GameOver_Panel: {fileID: 714772516}
   Playtime_Text: {fileID: 776823752}
+  arrowGenerator: {fileID: 998955208}
+  player: {fileID: 788863140}
 --- !u!4 &1667529783
 Transform:
   m_ObjectHideFlags: 0
